@@ -1,0 +1,231 @@
+﻿@using WebApplication43.ViewModels
+
+@model HomeViewModel
+@{
+    Layout = "_Layout";
+}
+    <main>
+        <section id="yourdog">
+            <div class="dog">
+                <div class="txt">
+                    <h1>We Care For<br>Your Dog</h1>
+                    <p>We always try to provide your dog the best<br> services.</p>
+                </div>
+                <div class="img">
+                    <img src="~/assets/image/dogger_img_1.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section id="petdoger">
+            <div class="doger">
+                <div class="text">
+                    <h1>Welcome to Dogger Pet Care</h1>
+                    <p>
+                        Far far away, behind the word mountains, far from the countries Vokalia <br> and Consonantia,
+                        there live the blind texts.
+                    </p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="txt">
+                            <h1>Love & Care</h1>
+                            <p>
+                                Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at
+                                the coast of the Semantics, alarge language ocean.
+                            </p>
+                            <button>Read More</button>
+                        </div>
+                        <div class="img">
+                            <img src="~/assets/image/dogger_img_sm_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="txt">
+                            <h1>Love & Care</h1>
+                            <p>
+                                Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at
+                                the coast of the
+                                Semantics, a
+                                large language ocean.
+                            </p>
+                            <button>Read More</button>
+                        </div>
+                        <div class="img">
+                            <img src="~/assets/image/dogger_img_sm_2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="txt">
+                            <h1>Love & Care</h1>
+                            <p>
+                                Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at
+                                the coast of the
+                                Semantics, a
+                                large language ocean.
+                            </p>
+                            <button>Read More</button>
+                        </div>
+                        <div class="img">
+                            <img src="~/assets/image/dogger_img_sm_3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="AboutUs">
+            <div class="About">
+                <div class="txt">
+                    <i class="fa-regular fa-square"></i>
+                    <h1>About Us</h1>
+                    <p>
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                        ocean.
+                    </p>
+                    <span>
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        It is a paradisematic
+                        country, in which roasted parts of sentences fly into your mouth.
+                    </span>
+                    <div class="spn">
+                        <span> <i class="fa-regular fa-square"></i> A small river named Duden flows</span>
+                        <span> <i class="fa-regular fa-square"></i>It is a paradisematic country</span>
+                        <span> <i class="fa-regular fa-square"></i> Roasted parts of sentences fly</span>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./assets/image/dogger_img_big_1.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section id="ourtran">
+            <div class="tran">
+                <div class="text">
+                    <h1>Our Trainers</h1>
+                    <p style="color: gray;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.
+                    </p>
+                </div>
+                <div class="cards">
+               
+                    @foreach(var item in Model.Products)
+                {
+                    <div class="card">
+                        <div class="img">
+                            <img src="~/assets/image/@item.ProductImages.FirstOrDefault().ImageUrl" alt="">
+                        </div>
+                        <div class="txt">
+                            <h1>@item.Category.Name</h1>
+                            <p style="color: gray;">
+                               @item.Category.Description
+                            </p>
+                            <div class="icon">
+                                <i class="fa-regular fa-square"></i>
+                                <i class="fa-regular fa-square"></i>
+                                <i class="fa-regular fa-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            </div>
+        </section>
+        <section id="tables">
+            <div class="table">
+                <div class="text">
+                    <h2 style="color: darkgreen;"><i class="fa-solid fa-paw"></i></h2>
+                    <h1>Pricing Table</h1>
+                    <p>
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.
+                    </p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="txt">
+                            <h4>Basic</h4>
+                            <h1>$47</h1>
+                        </div>
+                        <p> <i class="fa-solid fa-check"></i> Officia quaerat eaque neque</p>
+                        <p> <i class="fa-solid fa-check"></i> Officia quaerat eaque neque</p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <button>Read</button>
+                    </div>
+                    <div class="card">
+                        <div class="txt">
+                            <h4>Basic</h4>
+                            <h1>$47</h1>
+                        </div>
+                        <p> <i class="fa-solid fa-check"></i> Officia quaerat eaque neque</p>
+                        <p> <i class="fa-solid fa-check"></i> Officia quaerat eaque neque</p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <button>Read</button>
+                    </div>
+                    <div class="card">
+                        <div class="txt">
+                            <h4>Basic</h4>
+                            <h1>$47</h1>
+                        </div>
+                        <p> <i class="fa-solid fa-check"></i> Officia quaerat eaque neque</p>
+                        <p> <i class="fa-solid fa-check"></i> Officia quaerat eaque neque</p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <p style="color: gray;">
+                            <i class="fa-solid fa-check"></i> <del>
+                                Officia quaerat eaque
+                                neque
+                            </del>
+                        </p>
+                        <button>Read</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <section id="header">
+            <div class="head">
+                <div class="img">
+                    <h1>Dogger <span style="color: darkgreen;">.</span></h1>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <select name="" id="">
+                                    <option value="About">About</option>
+                                    <option value="Pitbull">Pitbull</option>
+                                    <option value="Alman kurdu">Alman kurdu</option>
+                                    <option value="Xaski">Xaski</option>
+                                </select>
+                            </li>
+                            <li><a href="#">Tranines</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Concat</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+
+        </section>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <section id="footer">
+            <div class="foot">
+                <div class="cards">
+                    <div class="card">
+                        <h1>About Us</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam
+                            voluptatum autem. Amet aliquid
+                            nesciunt veritatis aliquam.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h1>Quick Links</h1>
+                        <div class="nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Concat</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Trainers</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Follow Us</h1>
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Subscribe Newsletter</h1>
+                        <div class="input">
+                            <input type="text" placeholder="Enter Email">
+                            <button>Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="color">
+            <p style="color: darkgray;">
+                Copyright ©2026 All rights reserved | This template is made with <span style="color: red;"><i class="fa-solid fa-heart"></i></span> by Colorlib
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
